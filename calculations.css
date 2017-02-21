@@ -1,0 +1,162 @@
+/* This is the CSS for the Echos From Firelink calculations page */
+
+@font-face{
+font-family: OptimusPrinceps;
+src: url('OptimusPrinceps.ttf'),
+url('OptimusPrinceps.ttf');
+}
+
+*{
+	font-family:OptimusPrinceps;
+}
+
+html {
+	background-color:black;
+}
+
+body {
+	margin:0px;
+}
+
+#container {
+	margin:0px;
+}
+
+#navbar {
+	text-align:center;
+	background:black;
+}
+
+#navbar>li {
+	list-style-type:none;
+	display:inline;
+	text-align:center;
+	margin:50px;
+	font-size:40px;
+	color:white;
+}
+
+#navbar a {
+	text-decoration:none;
+	color:white;
+}
+
+#navbar a:hover {
+	color:grey;
+}
+
+#navbar a:visited {
+	color:none;
+}
+
+#lead_image {
+	background-image: url('dark-souls.jpg');
+	background-color:rgb(0, 0, 0)
+	background-position-x:50%;
+	background-position-y:10%;
+	background-repeat: no-repeat;
+	background-size:cover;
+	/*background:linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1)), url('dark_souls.png'), no-repeat;*/
+	box-sizing:border-box;
+	color:rgb(38, 38, 38)
+	display: block;
+	height:550px;
+	margin:0px;
+	position:relative;
+	text-rendering: optimizeSpeed;
+	text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
+
+#lead_image p{
+	text-align:right;
+	font-size:4em;
+	/*text-shadow:-1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;*/
+	margin:0px;
+	color:white;
+	padding-top:160px;
+	padding-right:2%;
+	text-size-adjust: 100%;
+}
+
+#lead_image p:nth-child(2){
+	text-align:right;
+	font-size:1em;
+	/*text-shadow:-1px 0 1px black, 0 1px 1px black, 1px 0 1px black, 0 -1px 1px black;*/
+	margin-top:0px;
+	color:white;
+	padding-top:0px;
+	padding-right:9.5%;
+	text-size-adjust: 100%;
+}
+
+#lead_image a {
+	text-decoration:none;
+}
+
+img {
+	max-height:50%;
+	max-width:50%;
+	padding-top:20%;
+}
+#boxes {
+	text-align:center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+	background-color:black;
+}
+
+#boxes a {
+	text-decoration:none;
+	color:white;
+}
+#boxes div{
+    width:14vmax;
+    height:14vmax;
+    max-height: 250px;
+    display: inline-block;
+    max-height:250px;
+    margin: 0;
+    padding: 0;
+}
+
+#boxes p {
+	font-size:30pt;
+}
+
+#calculations_box {
+	margin-left:20%;
+	margin-right:20%;
+	padding-top:30px;
+}
+
+#calculations_box p:first-child {
+	color: white;
+	font-size:72pt;
+	text-align:center;
+	margin:0;
+	padding-bottom:30px;
+	padding-top:50px;
+}
+
+#facts p {
+	color:white;
+	font-size:24pt;
+	text-align:center;
+	margin:0;
+}
+
+footer {
+	padding-top:3%;
+	text-align:center;
+	font-size:8px;
+	background-color:black;
+	color:white;
+}
+
+footer a {
+	text-decoration:none;
+	color:white;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<title> Echoes From Firelink </title>
+		<link rel="stylesheet" type="text/css" href="calculations.css">
+		<link rel="shortcut icon" href="coiledsword.ico">
+		
+		<script>
+				function startTime() {
+					var today = new Date();
+					var h = today.getHours();
+					var m = today.getMinutes();
+					var s = today.getSeconds();
+					m = checkTime(m);
+					s = checkTime(s);
+					document.getElementById('time').innerHTML =
+					h + ":" + m + ":" + s;
+					var t = setTimeout(startTime, 500);
+				}
+				function checkTime(i) {
+					if (i < 10) {i = "0" + i};
+					return i;
+				}
+		</script>
+	</head>
+	
+	<body onload="startTime()">
+		<div id="container">
+			<div id="navbar">
+				<li><a href="https://darksouls3.wiki.fextralife.com">Wiki</a></li>
+				
+				<li><a href="https://twitter.com/DarkSoulsGame">Twitter</a></li>
+				
+				<li><a href="https://www.darksouls3.com/us/">Official Homepage</a></li>
+				
+				<li><a href="https://www.reddit.com/r/darksouls3/">Reddit</a></li>
+				
+				<li><a href="https://steamcommunity.com/app/374320/discussions/">Discussion</a></li>
+				
+			</div> <!--navbar-->
+			
+			<a href="homepage.html">
+			<div id="lead_image">
+			<p>Echoes From Firelink</p></a>
+			<p>A simplisitc fan made Dark Souls 3 resource site</p>
+			</div><!--lead image-->
+			
+			<div id="boxes">
+				<div id="calculator">
+				<a href="calculations.html">
+				<img src="calculator_icon.png">
+				<p>calculations</p>
+				</a>
+				</div>
+				<div id="lore">
+				<a href="lore.html">
+				<img src="lore_icon.png">
+				<p>lore</p>
+				</a>
+				</div>
+				<div id="artwork">
+				<a href="artwork.html">
+				<img src="art_icon.png">
+				<p>artwork</p>
+				</a>
+				</div>
+				<div id="news">
+				<a href="news.html">
+				<img src="news_icon.png">
+				<p>news</p>
+				</a>
+				</div>
+				<div id="tips">
+				<a href="tips.html">
+				<img src="tips_icon.png">
+				<p>tips</p>
+				</a>
+				</div>
+				<div id="easter_eggs">
+				<a href="easter_eggs.html">
+				<img src="easter_egg_icon.png">
+				<p>easter eggs</p>
+				</a>
+				</div>
+			</div>
+			
+			<div id="calculations_box">
+			<p>Calculations<br><br>
+			<div id="time" style="color:white; text-align:center; font-size:48pt;"></div>
+			</p><br><br>
+			</div>
+			
+			<div id="facts">
+			<p>Click a name to learn some true and some made up facts.<br><br></p>
+			<p id="one" onclick="one()">Solaire</p><br><br>
+			<p id="two" onclick="two()">Andre</p><br><br>
+			<p id="three" onclick="three()">Fire Keeper</p><br><br>
+			<p id="four" onclick="four()">Gwyn, Lord of Cinder</p><br><br>
+			<p id="five" onclick="five()">Soul of Cinder</p><br><br>
+			</div>
+
+			<script>
+				function one() {
+				document.getElementById("one").innerHTML = "Status = Dead<br>\nHeight = 6 foot 4 inches<br>\nWeight = Probably 240 pounds with his armor.<br>\nPerson = Loved being alive, even if he was undead. A loyal companion<br>\nFun Fact: He loved to worship the sun.<br>";
+			}
+			function two() {
+				document.getElementById("two").innerHTML = "Status = Alive<br>\nHeight=6 foot 10 inches<br>\nWeight = Probably 280 pounds. Dude his huge.<br>\nPerson = Would follow you no matter what your final decision was<br>\nFun Fact: He may be related or a reincarnation of the blacksmith from Dark Souls 1.<br>";
+			}
+			function three() {
+				document.getElementById("three").innerHTML = "Status = Alive<br>\nHeight=5 foot 10 inches<br>\nWeight = Probably 140 pounds.<br>\nPerson = Did not care what you did, she would blindly follow you into the Dark Age of Man.<br>\nFun Fact: She gave up her eyes to become a keeper of The Flame.<br>";
+			}
+			function four() {
+				document.getElementById("four").innerHTML = "Status = Dead<br>\nHeight=7 foot 10 inches<br>\nWeight = Probably 300+ pounds.<br>\nPerson = Only cared about the Gods. Hated the Dragons and terrified of Man.<br>\nFun Fact: He was the one who initiated the extermination of the Dragons.<br>";
+			}
+			function five() {
+				document.getElementById("five").innerHTML = "Status = Alive<br>\nHeight=11 foot 6 inches<br>\nWeight = Probably 400+ pounds. Scary as hell.<br>\nPerson = Cared for nothing other than to test if others could reignite the First Flame.<br>\nFun Fact: He is the combination of all the past beings that lit the First Flame.<br>";
+			}
+			</script>
+			
+			
+			
+			<div id="lmao" style="margin-left:25%;">
+			<button onclick="document.getElementById('solaire').src='praise2.jpg'" style="font-size:24pt;">Praise left</button>
+
+			<img id="solaire" src="praise.jpg" style="padding-top:0px;">
+			
+			<button onclick="document.getElementById('solaire').src='praise.jpg'" style="font-size:24pt;">Praise right</button>
+			</div>
+			
+			<br><br>
+			
+			<div id="test" style="color:white; text-align:center; font-size:24pt;">
+			<p>Is Solaire the best character in the series?</p>
+
+			<form action="form_action.asp">
+			  <input type="radio" name="solaire" value="I'm glad you know your facts.">Yes<br>
+			  <input type="radio" name="solaire" value="You seem to think this is an opinion. It's not.">No<br>
+			  <br>
+			  <input type="button" onclick="test()" value="Submit opinion" style="font-size:24pt;">
+			  <br><br>
+			  <input type="text" id="submit" size="40" style="height:60px; font-size:24pt; text-align:center;">
+			</form>
+
+			<script>
+			function test() {
+				var solaire = document.forms[0];
+				var txt = "";
+				var i;
+				for (i = 0; i < solaire.length; i++) {
+					if (solaire[i].checked) {
+						txt = txt + solaire[i].value + " ";
+					}
+				}
+				document.getElementById("submit").value = txt;
+			}
+			</script>
+			</div>
+			<br><br><br>
+			
+			<div id="chance" style="color:white; text-align:center; font-size:24pt;">
+			<p>Yhorm the Giant is a 100ft giant undead humanoid who possesses a great-machete about 3 school-buses long.</p>
+			<p>Who do you think could take him down?</p>
+			<p>Please choose from the following:</p>
+			<p>Artorias the Abyss Walker</p>
+			<p>Siegward of Catarina</p>
+			<p>Havel the Rock</p>
+			<p>Yourself</p>
+			<p>Mr. Jones</p>
+
+			<input id="input" type="text" style="height:70px; font-size:24pt; text-align:center;">
+
+			<button onclick="fight()" style="font-size:24pt;">Submit your contender.</button>
+
+			<p id="box"></p>
+
+			<script>
+			function fight() {
+				var text;
+				var contenders = document.getElementById("input").value;
+
+				switch(contenders) {
+					case "Artorias the Abyss Walker":
+					text = "Good chance, but would fail.";
+					break;
+					case "Siegward of Catarina":
+					text = "I think he'd rather not hurt a friend.";
+					break;
+					case "Havel the Rock":
+					text = "It'd be a tie.";
+					break;
+					case "Yourself":
+					text = "HA. Not a single chance.";
+					break;
+					case "Mr. Jones":
+					text = "You're damn right.";
+					break;
+					default:
+					text = "They were not a choice.";
+				}
+				document.getElementById("box").innerHTML = text;
+			}
+			</script>
+			</div>
+			
+			<footer>
+			<p style="font-size:12pt;"><a href="citations.html" style="text-decoration:none;">  CLICK HERE FOR CITATIONS </a><p>
+			<pre>THIS   WEBSITE   IS   THE   PRODUCT   OF   THE   AUTHOR,   COLTON   HORVATH,   AND   ANY   COPY   OR   DISTRIBUTION   OF   IT'S   CODE   IS   UNAUTHORIZED<a href="http://heyyeyaaeyaaaeyaeyaa.com/">.</a>
+			</footer>		
+		</div><!--container-->
+	</body>
+</html>
